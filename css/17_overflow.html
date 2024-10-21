@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>overflow</title>
+</head>
+<body>
+
+  <style>
+    div {
+      width: 300px;
+      height: 200px;
+      border: 1px solid green;
+    }
+    #box1 {
+      overflow: hidden;
+    }
+    #box2 {
+      overflow: scroll;
+    }
+    #box3 {
+      overflow: auto;
+    }
+    #box4 {
+      overflow: visible;
+    }
+  </style>
+
+<!-- overflow: hidden; (숨김) -->
+<div id="box1">
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eleifend viverra neque sed feugiat. Suspendisse porttitor congue est, vel imperdiet massa iaculis ac. Sed rutrum eros id tortor cursus, malesuada condimentum ante posuere. Proin euismod sapien felis, ac scelerisque ipsum faucibus et. Cras vel blandit purus. Proin vel dui metus. Vestibulum lobortis diam dolor, eu dictum mi efficitur non. In hac habitasse platea dictumst. Maecenas maximus arcu nulla, in molestie eros sodales sed. Mauris euismod quam eget fermentum malesuada. Fusce tempus iaculis ligula, et lobortis velit congue nec.
+  
+  Nulla sagittis velit vitae dui aliquet, ac semper diam viverra. Nam leo nisi, laoreet vitae quam eget, dictum mollis turpis. Nulla rutrum augue non orci aliquet sagittis. Nunc a nisl quis justo rutrum ornare et ac dolor. In blandit, libero pulvinar aliquam pretium, massa tellus bibendum nisi, in eleifend ipsum dui luctus odio. Phasellus sodales leo nisl, ac interdum tellus dapibus ut. Nunc et euismod lorem. Morbi malesuada congue mattis. Quisque at eros in magna mollis rhoncus. Fusce purus mauris, pharetra varius feugiat vel, interdum sit amet augue. Duis efficitur dolor a consequat mollis. Vestibulum semper enim diam, quis scelerisque sem hendrerit sed. Aliquam fringilla eget sapien et scelerisque. Donec ac ornare velit. Fusce dapibus imperdiet nisi, eget elementum tortor faucibus in.
+</div>
+<hr>
+<!-- overflow: scroll; (스크롤) -->
+<div id="box2">
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eleifend viverra neque sed feugiat. Suspendisse porttitor congue est, vel imperdiet massa iaculis ac. Sed rutrum eros id tortor cursus, malesuada condimentum ante posuere. Proin euismod sapien felis, ac scelerisque ipsum faucibus et. Cras vel blandit purus. Proin vel dui metus. Vestibulum lobortis diam dolor, eu dictum mi efficitur non. In hac habitasse platea dictumst. Maecenas maximus arcu nulla, in molestie eros sodales sed. Mauris euismod quam eget fermentum malesuada. Fusce tempus iaculis ligula, et lobortis velit congue nec.
+  
+  Nulla sagittis velit vitae dui aliquet, ac semper diam viverra. Nam leo nisi, laoreet vitae quam eget, dictum mollis turpis. Nulla rutrum augue non orci aliquet sagittis. Nunc a nisl quis justo rutrum ornare et ac dolor. In blandit, libero pulvinar aliquam pretium, massa tellus bibendum nisi, in eleifend ipsum dui luctus odio. Phasellus sodales leo nisl, ac interdum tellus dapibus ut. Nunc et euismod lorem. Morbi malesuada congue mattis. Quisque at eros in magna mollis rhoncus. Fusce purus mauris, pharetra varius feugiat vel, interdum sit amet augue. Duis efficitur dolor a consequat mollis. Vestibulum semper enim diam, quis scelerisque sem hendrerit sed. Aliquam fringilla eget sapien et scelerisque. Donec ac ornare velit. Fusce dapibus imperdiet nisi, eget elementum tortor faucibus in.
+</div>
+<hr>
+<!-- overflow: auto; (자동) -->
+<div id="box3">
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eleifend viverra neque sed feugiat. Suspendisse porttitor congue est, vel imperdiet massa iaculis ac. Sed rutrum eros id tortor cursus, malesuada condimentum ante posuere. Proin euismod sapien felis, ac scelerisque ipsum faucibus et. Cras vel blandit purus. Proin vel dui metus. Vestibulum lobortis diam dolor, eu dictum mi efficitur non. In hac habitasse platea dictumst. Maecenas maximus arcu nulla, in molestie eros sodales sed. Mauris euismod quam eget fermentum malesuada. Fusce tempus iaculis ligula, et lobortis velit congue nec.
+  
+  Nulla sagittis velit vitae dui aliquet, ac semper diam viverra. Nam leo nisi, laoreet vitae quam eget, dictum mollis turpis. Nulla rutrum augue non orci aliquet sagittis. Nunc a nisl quis justo rutrum ornare et ac dolor. In blandit, libero pulvinar aliquam pretium, massa tellus bibendum nisi, in eleifend ipsum dui luctus odio. Phasellus sodales leo nisl, ac interdum tellus dapibus ut. Nunc et euismod lorem. Morbi malesuada congue mattis. Quisque at eros in magna mollis rhoncus. Fusce purus mauris, pharetra varius feugiat vel, interdum sit amet augue. Duis efficitur dolor a consequat mollis. Vestibulum semper enim diam, quis scelerisque sem hendrerit sed. Aliquam fringilla eget sapien et scelerisque. Donec ac ornare velit. Fusce dapibus imperdiet nisi, eget elementum tortor faucibus in.
+</div>
+<hr>
+<!-- overflow: visible; (디폴트) -->
+ <div id="box4">
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eleifend viverra neque sed feugiat. Suspendisse porttitor congue est, vel imperdiet massa iaculis ac. Sed rutrum eros id tortor cursus, malesuada condimentum ante posuere. Proin euismod sapien felis, ac scelerisque ipsum faucibus et. Cras vel blandit purus. Proin vel dui metus. Vestibulum lobortis diam dolor, eu dictum mi efficitur non. In hac habitasse platea dictumst. Maecenas maximus arcu nulla, in molestie eros sodales sed. Mauris euismod quam eget fermentum malesuada. Fusce tempus iaculis ligula, et lobortis velit congue nec.
+
+Nulla sagittis velit vitae dui aliquet, ac semper diam viverra. Nam leo nisi, laoreet vitae quam eget, dictum mollis turpis. Nulla rutrum augue non orci aliquet sagittis. Nunc a nisl quis justo rutrum ornare et ac dolor. In blandit, libero pulvinar aliquam pretium, massa tellus bibendum nisi, in eleifend ipsum dui luctus odio. Phasellus sodales leo nisl, ac interdum tellus dapibus ut. Nunc et euismod lorem. Morbi malesuada congue mattis. Quisque at eros in magna mollis rhoncus. Fusce purus mauris, pharetra varius feugiat vel, interdum sit amet augue. Duis efficitur dolor a consequat mollis. Vestibulum semper enim diam, quis scelerisque sem hendrerit sed. Aliquam fringilla eget sapien et scelerisque. Donec ac ornare velit. Fusce dapibus imperdiet nisi, eget elementum tortor faucibus in.
+ </div>
+ <hr>
+
+ <style>
+
+  
+    /*
+      overflow: hidden;
+      ┌──────────────────────────┐
+      |  float: left;            |
+      |  ┌────────┐  ┌────────┐  |
+      |  |        |  |        |  |
+      |  └────────┘  └────────┘  |
+      └──────────────────────────┘
+    */
+  .gnb {
+    margin-top: 1000px;
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+  }
+  .gnb > li {
+    float: left;
+    padding: 10px;
+    border: 1px solid gray;
+    text-align: center;
+  }
+ </style>
+ <ul class="gnb">
+  <li>정치</li>
+  <li>경제</li>
+  <li>사회</li>
+  <li>생활/문화</li>
+  <li>IT/과학</li>
+</ul>
+<div class="content">content</div>
+
+
+
+</body>
+</html>

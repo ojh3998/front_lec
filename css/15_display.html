@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>display</title>
+</head>
+<body>
+
+
+<!-- dislay : block; -->
+ <style>
+ span, a {
+  display: block;
+  border: 1px solid black;
+  width: 300px;
+  height: 50px;
+  text-align: center;
+ }
+ </style>
+ <span>인라인 요소1</span>
+ <a>인라인 요소2</a>
+
+
+ <hr>
+
+<!-- dislay : inline; -->
+ <style>
+  h1, p {
+    display: inline;
+  }
+ </style>
+<h1>블록 요소1</h1>
+<p>블록 요소2</p>
+
+<hr>
+
+
+<!-- dislay : inlin-block; 
+ 1. block 의 성질  : width / height / text-align 가능
+ 2. inline 의 성질 : 같은 라인에 배치
+-->
+
+
+<style>
+  pre {
+    display: inline-block;
+    width: 300px;
+    height: 50px;
+    text-align: center;
+    border: 1px solid green;
+  }
+</style>
+<pre>블록 요소1</pre>
+<pre>블록 요소2</pre>
+<pre>블록 요소3</pre>
+
+
+<hr>
+
+<style>
+  .inp-wrap > label {
+    display: inline-block;
+    width: 80px;
+  }
+
+</style>
+
+<div class="inp-wrap">
+  <label for="id">아이디</label>
+  <input type="text" id="id">
+</div>
+<div class="inp-wrap">
+  <label for="pw">비밀번호</label>
+  <input type="password" id="pw">
+</div>
+
+<hr>
+
+<style>
+  .gnb {
+  
+    list-style-type: none;
+    padding: 0;
+    border-bottom: 1px solid gray;
+
+
+  }
+  .gnb > li {
+    text-align: center;
+    display: inline-block;
+    width: 80px;
+    height: 25px;
+    margin: 0;
+    
+  }
+  .gnb > li:hover {
+    cursor: pointer;
+  }
+
+      
+</style>
+<ul class="gnb">
+  <li>정치</li>
+  <li>경제</li>
+  <li>사회</li>
+  <li>생활/문화</li>
+  <li>IT/과학</li>
+</ul>
+
+
+
+
+
+
+
+
+  
+</body>
+</html>

@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>practice</title>
+</head>
+<body>
+
+
+ <h1>연습 1</h1>
+<form method="post">
+ <input type="text" placeholder="example@naver.com" name="id" >
+ <input type="password" placeholder="비밀번호" name="pwd">
+ <button type="submit">로그인</button>
+</form> 
+
+ <br><br><br>
+
+ <h1>연습 2</h1>
+ <div>
+  <form method="post">
+    <table border="1">
+      <tbody>
+        <tr>
+         <input type="text" placeholder="아이디" name="id">
+         <br>
+         <input type="password" placeholder="비밀번호" name="pwd">
+        </tr>
+        <tr aria-colspan="2">
+         <button type="button">로그인</button>
+        </tr>
+      </tbody>
+    </table>
+  </form>
+</div>
+ <br><br><br>
+
+
+ <h1>연습 3</h1>
+ <br>
+ <h3>개인 정보 작성</h3>
+
+  이름<input type="text">
+  <br>
+  메일 주소<input type="text">
+  <br>
+  연락처<input type="text">
+  <br> 
+  블로그/홈페이지<input type="text">
+  <br>
+  <button type="botton">제출하기</button>
+  <button type="botton">다시작성</button>
+  <br><br>
+
+<h1>연습 4</h1>
+<div>
+  <!-- 파일 첨부가 포함된 form은 method + enctype 필수 작성 -->
+  <form method="post" enctype="multipart/form-data">
+    <div>
+      <label for="id">아이디</label>
+      <input type="text" id="id" name="id" placeholder="아이디">
+      <button type="button" onclick="alert('중복확인되었습니다.')">중복확인</button>
+    </div>
+    <div>
+      <label for="pw">비밀번호</label>
+      <input type="password" id="pw" name="pw" placeholder="새 비밀번호">
+    </div>
+    <div>
+      <label for="pw2">비밀번호 확인</label>
+      <input type="password" id="pw2" placeholder="비밀번호 확인">
+    </div>
+    <div>
+      <label for="email">이메일</label>
+      <input type="text" id="email" name="email" placeholder="이메일">
+      <span>@</span>
+      <input type="text" list="domain" name="email" placeholder="직접 입력 가능">
+      <datalist id="domain">
+        <option>gmail.com</option>
+        <option>naver.com</option>
+        <option>daum.net</option>
+      </datalist>
+    </div>
+    <div>
+      <fieldset>
+        <legend>성별</legend>
+        <input type="radio" name="gender" value="man" id="man">
+        <label for="man">남자</label>
+        <input type="radio" name="gender" value="woman" id="woman">
+        <label for="woman">여자</label>
+      </fieldset>
+    </div>
+    <div>
+      <fieldset>
+        <legend>관심</legend>
+        <div>
+          <input type="checkbox" name="interests" value="1" id="it">
+          <label for="it">IT</label>
+          <input type="checkbox" name="interests" value="2" id="manage">
+          <label for="manage">경영</label>
+        </div>
+        <div>
+          <input type="checkbox" name="interests" value="4" id="finance">
+          <label for="finance">금융</label>
+          <input type="checkbox" name="interests" value="8" id="manufacture">
+          <label for="manufacture">제조</label>
+        </div>
+        <div>
+          <input type="checkbox" name="interests" value="16" id="service">
+          <label for="service">서비스</label>
+          <input type="checkbox" name="interests" value="32" id="etc">
+          <label for="etc">기타</label>
+        </div>
+      </fieldset>
+      <div>
+        <label for="address">거주지</label>
+        <select name="address" id="address">
+          <option value="">::선택하세요::</option>
+          <option value="seoul">서울</option>
+          <option value="daejeon">대전</option>
+          <option value="daegu">대구</option>
+          <option value="busan">부산</option>
+          <option value="incheon">인천</option>
+        </select>
+        <input type="text" name="address">
+      </div>
+      <div>
+        <div><label for="introduce">자기 소개</label></div>
+        <textarea rows="5" cols="40" name="introduce" id="introduce" placeholder="200자 이내 간단히 작성"></textarea>
+      </div>
+      <div>
+        <label for="attach">이력서</label>
+        <input type="file" name="attach" id="attach">
+      </div>
+      <div>
+        <label for="submit_dt">제출일</label>
+        <input type="date" name="submit_dt" id="submit_dt">
+      </div>
+      <div>
+        <button type="submit">제출</button>
+        <button type="reset">다시입력</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+<br><br><br><br><br>
+<div>
+  <form method="get">
+    <div>
+      <label for="name">고객명 : </label>
+      <input type="text" name="name" id="name">
+      <br><br>
+
+      <label for="number">전화번호 : </label>
+      <input type="text" name="number" id="number">
+      <br><br>
+
+      <label for="email2">E-mail : </label>
+      <input type="email2" name="email2" id="email2">
+      <br><br>
+    </div>
+
+    <label for="피자선택">피자선택 : </label>   
+    <select name="pizza" id="pizza">
+      <option value="">::피자를 선택하세요::</option> 
+      <option value="1">마르게리타 피자</option> 
+      <option value="2">고르곤졸라 피자</option> 
+      <option value="3">불고기 피자</option> 
+      <option value="4">고구마 피자</option> 
+      <option value="5">루꼴라 피자</option> 
+      <option value="6">포테이토 피자</option> 
+    </select>
+    <br><br>
+
+    <fieldset>
+      <legend>피자 사이즈</legend>
+     
+      <input type="radio" name="size" value="S">
+      <label for="S">Small</label> <br><br>
+      <input type="radio" name="size" value="M">
+      <label for="M">Medium </label><br><br>
+      <input type="radio" name="size" value="L">
+      <label for="L">Large</label> 
+
+    </fieldset>
+
+
+
+
+  </form>
+</div>
+
+
+
+<style>
+#sports > li > label { 
+  color: aqua;  
+}
+#sports label {
+   font-style: italic;
+}
+
+</style>
+
+<ol id="sports">
+  <li>
+    <input type="radio" id="soccer" name="sports">
+    <label for="soccer">축구</label>
+  </li>
+  <li>
+    <input type="radio" id="baseball" name="sports">
+    <label for="baseball">야구</label> 
+  </li>
+  <li>
+    <input type="radio" id="basketball" name="sports">
+    <label for="basketball">농구</label>
+  </li> 
+</ol>
+
+
+<hr>
+
+<style>
+#koreaplayer ~ p {
+  color: brown;
+}
+
+</style>
+<p>이강인</p>
+<h1 id="koreaplayer">한국 축구선수</h1>
+<p>손흥민</p>
+<p>박지성</p>
+<p>차범근</p>
+<p>기성용</p>
+<p>안정환</p>
+<p>이천수</p>
+
+
+<ul>
+  <li>1</li>
+  <li>2</li>
+  <li>3</li>
+  <li>4</li>
+  <li>5</li>
+  <li>6</li>
+</ul>
+
+
+
+
+<style>
+  div {
+    border: 1px solid green;
+    box-sizing: border-box;
+   
+   
+  }
+  .box {
+    display: flex;
+    width: 300px;
+   
+    
+    
+   
+  }
+  .box > .square {
+    width: 50px;
+   
+  }
+    
+  
+</style>
+<div class="box">
+  <div class="square">box11</div>
+  <div class="square">box12</div>
+  <div class="square">box13</div>
+  <div class="square">box14</div>
+  <div class="square">box15</div>
+
+</div>
+
+
+
+
+
+
+
+  
+</body>
+</html>
