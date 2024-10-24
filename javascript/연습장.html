@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>note</title>
+</head>
+<body>
+
+
+<script>
+const a = 124;
+const b = 12;
+document.write(`<div>${a} + ${b} = ${a + b}</div>`);
+document.write(`<div>${a} - ${b} = ${a - b}</div>`);
+document.write(`<div>${a} * ${b} = ${a * b}</div>`);
+document.write(`<div>${a} / ${b} = ${a / b}</div>`);
+document.write(`<div>${a} % ${b} = ${a % b}</div>`);
+document.write(`<div>${a}를  ${b}로 나눈 몫 = ${parseInt(a / b)}</div>`);
+</script>
+<hr>
+
+<script>
+let t = 10;
+let p
+p = t--
+document.write(`p=${p}, t=${t}`);
+
+</script>
+<hr>
+
+<script>
+ let n = 100;
+ document.write(`<div>${n += 100}</div>`);
+ document.write(`<div>${n -= 100}</div>`);
+ document.write(`<div>${n *= 100}</div>`);
+ document.write(`<div>${n /= 100}</div>`);
+ document.write(`<div>${n %= 100}</div>`);
+</script>
+
+<!--
+2025년 최저시급 10,030원 
+10시간 근무하면 일급이 얼마인가?
+8시간까지는 기본시급, 초과근무는 기본 시급의 1.5배
+-->  
+
+<script>
+ const hourlyWage = 10030;
+ const workingTime = 10;
+ const regularPay = hourlyWage * workingTime
+ const extraPay = (workingTime <= 8 ? 0 : workingTime - 8 ) * hourlyWage *  0.5;
+
+ document.write(`<div>${workingTime}시간 근무 했을 때 일급은 ${regularPay + extraPay}원 이다.</div>`);
+</script>
+
+<!-- ~가 ? 트루면 이거 : 팔스면 이거 -->
+
+
+<script>
+
+
+//2025년 최저시급 12,350원 
+//12시간 근무하면 일급이 얼마인가?
+//8시간까지는 기본시급, 초과근무는 기본 시급의 2배
+
+
+const sigep = 12350;
+const time = 12;
+const today = sigep * time
+const overpay = (time <= 8 ? 0 : time - 8) * sigep * 2;
+
+document.write(`<div>오늘의 급여는 ${time}시간 근무해서 ${today + overpay}원 입니다.</div>`);
+
+
+
+98800
+
+</script>
+
+<hr>
+
+<script>
+    // 문제1. 수, 우, 미, 양, 가, 잘못된 점수
+  let score = 80;
+  let grade;
+  
+
+  if(score < 0 || score > 100){ grade = '점수 없음'}
+  else if(score >= 90){ grande = '수'}
+  else if(score >= 80){ grade = '우'}
+  else if(score >= 70){grade = '미'}
+  else if(score >= 60){grade = '양'}
+  else{grade = '가' }
+
+  document.write(`<div>점수는 ${score}이고 성적은 ${grade}입니다.</div>`)
+</script>
+
+<script>
+function kim (){
+  function ji (){
+    document.write(`<div>김성율</div>`)
+  }
+  ji();
+ 
+  document.write(`<div>박소정</div>`)
+}
+kim();
+
+
+</script>
+
+<script>
+  const karldelen = function(){
+  
+    document.write(`<div>박소정</div>`)
+    
+  }
+  karldelen();
+  
+</script>
+
+<script>
+  const park = () => {
+    document.write(`<div>박소정</div>`)
+
+  }
+  park();
+</script>
+
+<script>
+ const lee = () => {
+  document.write(`<div>lady</div>`)
+ }
+ lee();
+</script>
+<hr>
+<script>
+  // for문으로 1000~100 거꾸로 구하기
+ for(let a = 5; a >= 1; a--){
+  document.write(`<div>${a}</div>`);
+ }
+
+</script>
+<hr>
+<script>
+  // 문제3. <select> 태그 만들기
+  document.write(`<select>`);
+  document.write(`<option>${1}</option>`);
+  document.write(`<option>${2}</option>`);
+  document.write(`<option>${3}</option>`);
+  document.write(`<option>${4}</option>`);
+  document.write(`<option>${5}</option>`);
+  document.write(`<option>${6}</option>`);
+  document.write(`<option>${7}</option>`);
+  document.write(`<option>${8}</option>`);
+  document.write(`<option>${9}</option>`);
+  document.write(`<option>${10}</option>`);
+  document.write(`<option>${11}</option>`);
+  document.write(`<option>${12}</option>`);
+  document.write(`/<select>`);
+</script>
+<hr>
+<script>
+  // 위에거를 for 문으로 만들어라.dz
+document.write(`<select>`);
+  for(let number = 1; number <= 12; number++){
+    document.write(`<option>${number}</option>`);
+  }
+document.write(`/<select>`);
+</script>
+<hr>
+<script>
+  // 문제4. flower1.jpg ~ flower5.jpg 출력하기 (각 width = 100px)
+  for(let f = 1; f <=5; f++){
+    document.write(`<div><img src ="../assets/images/flower${f}.jpg" width = "100px" ></div>`);
+  }
+</script>
+
+<h4>for 문 중첩</h4>
+<script>
+for(let day = 1; day <= 5; day++){
+  document.write(`<div>${day}일차입니다.<div>`);
+    for(let time = 1; time <= 8; time++){
+      document.write(`<div>${time}교시입니다.<div>`);
+
+    }
+}
+</script>
+<hr>
+<script>
+//인자x 반환x
+ const fnArgRet1 = () => document.write(`<div>1</div>`);
+ fnArgRet1();
+
+//인자o 반환 x
+const fnArgRet2 = param => document.write(`<div>${param}</div>`);
+fnArgRet2(10);
+
+//인자 x 반환 o
+const fnArgRet3 = param =>  1;  
+document.write(`<div>${fnArgRet3()}</div>`);
+
+
+//인자o 반환o
+const fnArgRet4 = (param) => param - 1
+document.write(`<div>${fnArgRet4(10)}</div>`);
+
+</script>
+
+<script>
+function fnKim() {
+  document.write(`<div>kerdelern</div>`);
+}
+fnKim();
+
+let fnlee = function() {
+  document.write(`<div>kerdelern</div>`);
+}
+fnlee();
+
+let fncho = (dongsu) => {
+  document.write(`<div>동수의 나이는 : ${dongsu}세 입니다.</div>`);
+}
+fncho(25);
+
+let dongsu = 25;
+fncho(dongsu);
+
+let seongyul = 25;
+fncho(seongyul);
+
+
+</script>
+  
+</body>
+</html>
