@@ -50,6 +50,50 @@
     10. Date.prototype.getTime()
         → 지정된 날짜의 시간에 해당하는 숫자 값 반환 (타임스탬프 값 반환)
 -->
+<h4>Date 내장 객체</h4>
+<script>
+  // 현재 날짜와 시간
+  const strNow = Date(); // string 타입
+  const objNow = newDate(); // object 타입
+  document.write(`<div>strNow : ${strNow}, ${typeof strNow}</div>`);
+  document.write(`<div>objNow : ${objNow}, ${typeof objNow}</div>`);
+  
+  //특정 날짜와 시간
+  const datetime = new Date(2024, 0, 1, 12, 0, 0); //2024-01-01 12:00:00
+  document.write(`<div>datetime : ${datetime}</div>`);
+
+  // 자동 고침 기능
+  const someday = new Date(2024, 0, 32); // 2024-01-32?? 
+  document.write(`<div>someday : ${someday}</div>`);
+
+  // 단위 추출
+ const now = new Date();
+ const year = now.getFullYear();
+ const month = now.getMonth();
+ const day = now.getDate();
+ const dayNo = now.getDay();
+ const hour = now.getHour();
+ const minute = now.getMinutes();
+ const second = now.getSeconds();
+ const millis = now.getMilliseconds();
+
+ // 2024-10-25 금요일 오전 9:55:30.456 만들기
+ const result = year + '-' + (month + 1) + '-' + day + ' ' + 
+                ['일', '월', '화', '수', '목', '금', '토'][dayNo] + '요일' +
+                (hour >= 12 ? '오후' : '오전') + ' ' + 
+                (hour === 12 ? 12 : hour % 12) + ':' + (minute < 10 ? '0' + minute : minute) + ':' + second + '.' millis
+               // (hour === 12 ? hour : hour % 12) 
+
+document.write(`<div>%{result}</div>`);
+
+// 타임스탬프
+const timestamp1 = now.getTime();
+const timestamp2 = Date.now();
+document.write(`<div>${timestamp1}, ${timestamp2}</div>`);
+
+</script>
+<hr>
+
 
 
 
